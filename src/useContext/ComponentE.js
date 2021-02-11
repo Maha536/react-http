@@ -1,14 +1,14 @@
 import React, {useContext} from 'react'
-import { userContext, passContext } from "../App";
+//import { userContext, passContext } from "../App";
 
 function ComponentE() {
 
-    const user = useContext(userContext)
-    const pass = useContext(passContext)
+    //const user = useContext(userContext)
+    ///const pass = useContext(passContext)
 
     return (
         <div>
-            {user} - {pass}
+          {/*}  {user} - {pass}*/}
         </div>
     )
 }

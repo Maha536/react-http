@@ -1,7 +1,12 @@
 import logo from './logo.svg';
-import React from 'react'
+import React,{useState, useReducer} from 'react'
 import './App.css';
-import PutForm from './components/PutForm';
+import ComponentB from './useReduceWithUseContext/ComponentB';
+import ComponentA from './useReduceWithUseContext/ComponentA';
+import ComponentC from './useReduceWithUseContext/ComponentC';
+import DataFetchingOne from './useReducer/DataFetchingOne';
+import DataFetchingTwo from './useReducer/DataFetchingTwo';
+/*import PutForm from './components/PutForm';
 import DeleteForm from './components/DeleteForm';
 import ClassCounter from './Hooks/ClassCounter';
 import HookCounter from './Hooks/HookCounter';
@@ -14,17 +19,45 @@ import IntervalClassCounter from './useEffect/IntervalClassCounter';
 import IntervalHookCounter from './useEffect/IntervalHookCounter';
 import DataFetching from './useEffect/DataFetching';
 import ComponentC from './useContext/ComponentC';
-export const userContext = React.createContext("Maha")
-export const passContext = React.createContext("Hari")
-
+import CounterOne from './useReducer/CounterOne';
+import Counter2 from './useReducer/Counter2';
+import CounterThree from './useReducer/CounterThree';
+//export const userContext = React.createContext("Maha")
+//export const passContext = React.createContext("Hari")
+*/
+export const CountContext = React.createContext()
+/*
+const initialState = 0
+const reducer = (state, action)=>{
+    switch(action){
+        case 'increment':
+            return state+1
+        case 'decrement':
+            return state-1
+        case 'reset':
+            return initialState
+        default:
+            return state
+    }
+}
+*/
 function App() {
-  
+  //const [count, dispatch] = useReducer(reducer,initialState)
   return (
     <div className="App">
-      <h1>Hello</h1>
-      <ComponentC/>
+      <DataFetchingTwo/>
     </div>
-  );
+      );
+   {/*} <CountContext.Provider value={{countState : count, countDispatch : dispatch}}>
+      <div className="App">
+          <h1>Hello</h1>
+          <h1>Count - {count}</h1>
+          <ComponentA/>
+          <ComponentB/>
+          <ComponentC/>
+      </div>
+  </CountContext.Provider>*/}
+
 }
 
 export default App;
