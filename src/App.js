@@ -7,6 +7,8 @@ import ComponentC from './useReduceWithUseContext/ComponentC';
 import DataFetchingOne from './useReducer/DataFetchingOne';
 import DataFetchingTwo from './useReducer/DataFetchingTwo';
 import FocusInput from './useRef/FocusInput';
+import DocTitleOne from './CustomHooks/DocTitleOne';
+import DocTitleTwo from './CustomHooks/DocTitleTwo';
 /*import PutForm from './components/PutForm';
 import DeleteForm from './components/DeleteForm';
 import ClassCounter from './Hooks/ClassCounter';
@@ -46,7 +48,8 @@ function App() {
   //const [count, dispatch] = useReducer(reducer,initialState)
   return (
     <div className="App">
-      <FocusInput/>
+      <DocTitleOne/>
+      <DocTitleTwo/>
     </div>
       );
    {/*} <CountContext.Provider value={{countState : count, countDispatch : dispatch}}>
